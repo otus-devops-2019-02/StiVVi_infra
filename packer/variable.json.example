@@ -1,0 +1,7 @@
+{
+    "variables": {
+        "project_id": "testtesttest",
+        "source_image_family": "testtesttest",
+        "machine_type": "f1-micro"
+    }
+}
