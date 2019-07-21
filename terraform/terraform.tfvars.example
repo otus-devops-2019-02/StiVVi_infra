@@ -1,0 +1,5 @@
+project         = "neon-camera-246017"
+region          = "europe-west1"
+public_key_path = "C:\\Users\\knuteg\\.ssh\\id_rsa.pub"
+disk_image      = "reddit-base"
+ssh_private_key = "C:\\Users\\knuteg\\.ssh\\id_rsa"
