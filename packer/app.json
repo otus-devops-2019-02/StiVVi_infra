@@ -21,8 +21,7 @@
         "disk_size": "{{user `disk_size`}}"
     }],
     "provisioners": [{
-        "type": "shell",
-        "script": "scripts\\install_ruby.sh",
-        "execute_command": "sudo {{.Path}}"
+        "type": "ansible",
+        "playbook_file": "../ansible/packer_app.yml"
     }]
 }
