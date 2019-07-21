@@ -1,0 +1,31 @@
+---
+- name: ruby install
+  hosts: all
+  become: yes
+  tasks:
+    - name: update packages
+      apt:
+        update_cache: yes
+        cache_valid_time: 3600
+        upgrade: yes
+    - name: install ruby, bundler and build-essential
+      apt:
+        name: "{{ item }}"
+        state: latest
+      with_items:
+        - ruby
+        - bundler
+        - build-essential
+    - name: get ruby version
+      shell: ruby -v
+      register: ruby_version
+
+    - debug:
+        var: ruby_version
+
+    - name: get bundler version
+      shell: bundler -v
+      register: bundler_version
+
+    - debug: 
+        var: bundler_version
