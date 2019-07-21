@@ -1,2 +1,3 @@
 # StiVVi_infra
-StiVVi Infra repository
+Сделано:
+Основное задание Terraform-1
